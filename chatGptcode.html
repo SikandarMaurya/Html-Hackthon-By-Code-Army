@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Some Keyword Use Form ChatGpt</title>
+</head>
+<body>
+    <center>
+
+        <hr>
+        <h1>exploring the old-school HTML tricks (since CSS is not allowed)</h1>
+        <hr>
+    </center>
+    <h2>&lt;center&gt;</h2>
+    <p><b>What it does:</b> Centers the content (text, images, tables, etc.) horizontally on the page.</p>
+    <p><b>Code Example:</b></p>
+    <pre>
+&lt;center&gt;
+    &lt;h2&gt;Welcome to My Website&lt;/h2&gt;
+&lt;/center&gt;
+    </pre>
+    <p><b>Live Demo:</b></p>
+    <center>
+        <h2>Welcome to My Website</h2>
+    </center>
+    <p><b>Status:</b> Deprecated in HTML5 (not recommended), but still works.  
+    <br><b>Alternative:</b> CSS → text-align: center;</p>
+
+    <hr>
+
+    <h2>&lt;marquee&gt;</h2>
+    <p><b>What it does:</b> Creates a scrolling (moving) text or image banner.</p>
+    <p><b>Code Example:</b></p>
+    <pre>
+&lt;marquee behavior="scroll" direction="left"&gt; 🚀 Welcome to HTML Hackathon! 🚀 &lt;/marquee&gt;
+    </pre>
+    <p><b>Live Demo:</b></p>
+    <marquee behavior="scroll" direction="left" scrollamount="6"> 🚀 Welcome to HTML Hackathon! 🚀 </marquee>
+    <p><b>Status:</b> Deprecated in HTML5, but still works for fun projects.</p>
+
+    <hr>
+
+      <!-- &gt;
+  <h2>➡️ &amp;gt;</h2>
+  <p><b>What it does:</b> Displays the "greater than" symbol (>).</p>
+  <p><b>Why use it:</b> If you write <code>&gt;</code> in HTML, the browser shows <b>&gt;</b> instead of confusing it with a tag.</p>
+  <p><b>Code Example:</b></p>
+  <pre>
+2 &amp;gt; 1
+  </pre>
+  <p><b>Live Demo:</b> 2 &gt; 1 ✅</p>
+
+  <hr>
+
+  &lt;
+  <!-- <h2>⬅️ &amp;lt;</h2>
+  <p><b>What it does:</b> Displays the "less than" symbol (&lt;).</p>
+  <p><b>Why use it:</b> If you write <code>&lt;</code> in HTML, the browser shows <b>&lt;</b> instead of thinking it’s a tag.</p>
+  <p><b>Code Example:</b></p>
+  <pre>
+5 &amp;lt; 10
+  </pre>
+  <p><b>Live Demo:</b> 5 &lt; 10 ✅</p>
+
+  <hr> --> -->
+
+  <!-- pre -->
+  <h2>📜 &lt;pre&gt;</h2>
+  <p><b>What it does:</b> The <code>&lt;pre&gt;</code> tag preserves spaces, tabs, and line breaks exactly as written in the code.</p>
+  <p><b>Why use it:</b> Perfect for writing code snippets or formatted text (like poetry).</p>
+  <p><b>Code Example:</b></p>
+  <pre>
+&lt;pre&gt;
+Line 1
+    Line 2 (indented)
+Line 3
+&lt;/pre&gt;
+  </pre>
+  <p><b>Live Demo:</b></p>
+  <pre>
+Line 1
+    Line 2 (indented)
+Line 3
+  </pre>
+
+  <hr>
+
+  <!-- b -->
+  <h2>🖊️ &lt;b&gt;</h2>
+  <p><b>What it does:</b> Makes text <b>bold</b>.</p>
+  <p><b>Why use it:</b> To highlight important words, but without adding special meaning (just style).</p>
+  <p><b>Code Example:</b></p>
+  <pre>
+This is &lt;b&gt;important&lt;/b&gt; text.
+  </pre>
+  <p><b>Live Demo:</b> This is <b>important</b> text ✅</p>
+  <br><hr>
+
+    <hr>
+
+  <h2>🔹 What is &lt;code&gt;?</h2>
+  <p>
+    The <code>&lt;code&gt;</code> tag is used to display a piece of 
+    <b>computer code</b>. By default, the text inside appears in a 
+    <b>monospace font</b> (like in programming editors).
+  </p>
+
+  <h2>🔹 Why use it?</h2>
+  <ul>
+    <li>To show inline code inside a sentence.</li>
+    <li>To make examples of commands or snippets stand out.</li>
+    <li>Often combined with <code>&lt;pre&gt;</code> to display code blocks.</li>
+  </ul>
+
+  <h2>🔹 Example 1 (Inline)</h2>
+  <p><b>Code:</b></p>
+  <pre>
+Use the &lt;code&gt;print("Hello, World!")&lt;/code&gt; command in Python.
+  </pre>
+  <p><b>Live Demo:</b></p>
+  <p>Use the <code>print("Hello, World!")</code> command in Python.</p>
+
+  <h2>🔹 Example 2 (With &lt;pre&gt;)</h2>
+  <p><b>Code:</b></p>
+  <pre>
+&lt;pre&gt;
+&lt;code&gt;
+for i in range(5):
+    print(i)
+&lt;/code&gt;
+&lt;/pre&gt;
+  </pre>
+  <p><b>Live Demo:</b></p>
+  <pre>
+<code>
+for i in range(5):
+    print(i)
+</code>
+  </pre>
+
+  <h2>🔹 Conclusion</h2>
+  <p>
+    ✅ Use <code>&lt;code&gt;</code> for inline code.  
+    ✅ Use <code>&lt;pre&gt;&lt;code&gt;</code> for larger code blocks.  
+  </p>
+
+  <hr>
+
+    <h2>cellpadding="10"</h2>
+    <p><b>What it does:</b> Adds space inside each table cell (between border and content).</p>
+    <p><b>Code Example:</b></p>
+    <pre>
+&lt;table border="1" cellpadding="10"&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+        &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+    </pre>
+    <p><b>Live Demo:</b></p>
+    <table border="1" cellpadding="10">
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+        </tr>
+    </table>
+    <p><b>Effect:</b> Makes the table look less cramped.</p>
+    <p><b>Difference:</b></p>
+    <ul>
+        <li><b>cellpadding</b> → space inside the cell</li>
+        <li><b>cellspacing</b> → space between cells</li>
+    </ul>
+    <p><b>Status:</b> Deprecated in HTML5, but works fine when CSS is not allowed.</p>
+
+    <hr>
+
+<h2>align="center"</h2>
+<p><b>What it does:</b> Aligns text, images, or tables to the center horizontally.</p>
+<p><b>Code Example:</b></p>
+<pre>
+&lt;p align="center"&gt;This text is centered&lt;/p&gt;
+
+&lt;table border="1" align="center"&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Centered Table&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+<p><b>Live Demo:</b></p>
+<p align="center">This text is centered</p>
+<table border="1" align="center">
+    <tr>
+        <td>Centered Table</td>
+    </tr>
+</table>
+<p><b>Status:</b> Deprecated in HTML5 (not recommended), but still works.  
+<br><b>Alternative:</b> CSS → text-align: center;</p>
+
+
+    <hr>
+    <h1>HTML &lt;strong&gt; Tag</h1>
+
+  <p>
+    The <code>&lt;strong&gt;</code> tag is used to mark text as 
+    <strong>important</strong>.  
+    By default, browsers display it in <b>bold</b>, but it also adds 
+    <em>semantic meaning</em> (helps search engines and screen readers).
+  </p>
+
+  <h2>Syntax</h2>
+  <pre>
+&lt;strong&gt;This text is important&lt;/strong&gt;
+  </pre>
+
+  <h2>Example</h2>
+  <pre>
+&lt;p&gt;This is a normal sentence, but 
+&lt;strong&gt;this part is very important!&lt;/strong&gt;&lt;/p&gt;
+  </pre>
+
+  <h2>Output</h2>
+  <p>
+    This is a normal sentence, but 
+    <strong>this part is very important!</strong>
+  </p>
+
+  <h2>Note</h2>
+  <p>
+    ✅ Use <code>&lt;strong&gt;</code> when text is <b>important</b>.  
+    ❌ Use <code>&lt;b&gt;</code> only when you want bold styling without meaning.
+  </p>
+  <hr>
+    <footer>
+        <center>
+        <h3>This Is Made From Ai And Me Also For Education Purpose. Only To Know About All This Keyword. OtherWise Ignore It!</h3>
+        <p>© 2025 Coder Army | All Rights Reserved</p>
+    </center>
+    </footer>
+
+</body>
+</html>
